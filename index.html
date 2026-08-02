@@ -3,45 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NN Network</title>
+
+<title>NN Network | Digital Newspaper</title>
 
 <style>
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f2f2f2;
+    background: #f1f1f1;
     color: #222;
 }
 
 header {
-    background: #0b0b0b;
+    background: #111;
     color: white;
-    padding: 25px;
     text-align: center;
+    padding: 25px;
 }
 
 .logo {
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
 }
 
 nav {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 12px;
+button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    border-radius: 8px;
     font-weight: bold;
+    cursor: pointer;
 }
 
-.live {
+button:hover {
     background: red;
     color: white;
-    padding: 10px;
-    text-align: center;
+}
+
+.breaking {
+    background: red;
+    color: white;
+    padding: 15px;
     font-weight: bold;
+    text-align: center;
 }
 
 .container {
@@ -52,16 +63,21 @@ nav a {
 
 .feature {
     background: white;
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 30px;
     border-radius: 15px;
 }
 
-.feature h2 {
-    font-size: 35px;
+.feature h1 {
+    font-size: 40px;
 }
 
-.news-grid {
+.read {
+    background: #111;
+    color: white;
+}
+
+.news {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
@@ -72,103 +88,183 @@ nav a {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    transition: .3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
+.card h2 {
     margin-top: 0;
 }
 
-button {
-    background: #111;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-}
-
 footer {
-    margin-top: 40px;
     background: #111;
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 40px;
 }
+
 </style>
 
 </head>
 
+
 <body>
 
+
 <header>
+
 <div class="logo">NN</div>
+
 <h2>NN Network</h2>
+
 <p>Your Digital Newspaper</p>
 
+
 <nav>
-<a href="#">Home</a>
-<a href="#">World</a>
-<a href="#">Sports</a>
-<a href="#">Tech</a>
-<a href="#">Entertainment</a>
+
+<a href="index.html"><button>Home</button></a>
+<a href="world.html"><button>World</button></a>
+<a href="sports.html"><button>Sports</button></a>
+<a href="weather.html"><button>Weather</button></a>
+<a href="technology.html"><button>Technology</button></a>
+<a href="contact.html"><button>Contact</button></a>
+
 </nav>
 
 </header>
 
 
-<div class="live">
-🔴 LIVE • Breaking News Updates
+
+<div class="breaking">
+
+🚨 BREAKING NEWS: Canada Wildfires Continue To Impact Air Quality
+
 </div>
+
 
 
 <div class="container">
 
+
 <section class="feature">
-<h2>Top Story</h2>
+
+<h1>🔥 Canada Wildfires Update</h1>
+
 <p>
-Welcome to NN Network. Get the latest updates from around the world,
-sports, technology, and entertainment all in one place.
+Wildfires continue affecting parts of Canada as firefighters battle
+dangerous conditions. Smoke has reached parts of the United States,
+creating air quality concerns.
 </p>
 
-<button>Read More</button>
+<a href="article.html">
+<button class="read">Read Full Story</button>
+</a>
 
 </section>
 
 
-<div class="news-grid">
+
+<h2>Latest News</h2>
+
+
+<section class="news">
+
 
 <div class="card">
-<h3>🌎 World News</h3>
-<p>Latest events happening around the globe.</p>
+
+<h2>🌎 World News</h2>
+
+<p>
+Get the latest stories happening around the world.
+</p>
+
+<button>View News</button>
+
 </div>
+
+
 
 <div class="card">
-<h3>⚽ Sports</h3>
-<p>Scores, transfers, and biggest sports stories.</p>
+
+<h2>⚽ Sports</h2>
+
+<p>
+Scores, transfers, and updates from your favorite teams.
+</p>
+
+<button>View Sports</button>
+
 </div>
+
+
 
 <div class="card">
-<h3>🤖 Technology</h3>
-<p>AI, inventions, and the future of technology.</p>
+
+<h2>🤖 Technology</h2>
+
+<p>
+AI, gadgets, inventions, and the future of tech.
+</p>
+
+<button>View Tech</button>
+
 </div>
+
+
 
 <div class="card">
-<h3>🎬 Entertainment</h3>
-<p>Movies, music, and creator news.</p>
-</div>
+
+<h2>🌦️ Weather</h2>
+
+<p>
+Storms, temperatures, and weather alerts.
+</p>
+
+<button>View Weather</button>
 
 </div>
 
+
+
+<div class="card">
+
+<h2>🎬 Entertainment</h2>
+
+<p>
+Movies, music, and trending stories.
+</p>
+
+<button>View Entertainment</button>
+
 </div>
+
+
+
+<div class="card">
+
+<h2>🔥 Environment</h2>
+
+<p>
+Climate, disasters, and nature updates.
+</p>
+
+<button>View Environment</button>
+
+</div>
+
+
+</section>
+
+
+</div>
+
 
 
 <footer>
+
 © 2026 NN Network • Digital Newspaper
+
 </footer>
+
 
 </body>
 </html>
